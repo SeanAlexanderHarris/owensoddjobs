@@ -1,10 +1,10 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Jodie - Gatsby Starter Portfolio`,
+    siteTitleAlt: `Owen's Oddjobs Portfolio`,
   },
   plugins: [
     {
@@ -12,22 +12,17 @@ module.exports = {
       // See the theme's README for all available options
       options: {
         navigation: [
+          { name: `About`, slug: `/about` },
           { name: `Projects`, slug: `/projects` },
           { name: `Instagram`, slug: `/instagram` },
-          { name: `About`, slug: `/about` },
+          { name: `Contact`, slug: `/contact` },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
     },
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `2315642426`,
+        username: `32756026783`,
       },
     },
     `gatsby-plugin-sitemap`,
@@ -36,7 +31,7 @@ module.exports = {
       options: {
         name: `jodie - @lekoarts/gatsby-theme-jodie`,
         short_name: `jodie`,
-        description: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
+        description: `Owen's Oddjobs Portfolio`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#b75e09`,
@@ -59,4 +54,4 @@ module.exports = {
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-netlify`,
   ],
-}
+};
