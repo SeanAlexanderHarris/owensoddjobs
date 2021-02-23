@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "jodie",
-  "description": "Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.",
+  "name": "sean",
+  "description": "Owen's Oddjobs Portfolio.",
   "version": "0.1.3",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "Sean",
   "license": "0BSD",
   "starter-name": "gatsby-starter-portfolio-jodie",
   "scripts": {
@@ -17,9 +17,9 @@
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-jodie": "^1.0.3",
+    "@sendgrid/mail": "^7.4.2",
     "gatsby": "^2.25.3",
     "gatsby-plugin-gatsby-cloud": "^1.0.1",
-    "gatsby-plugin-google-analytics": "^2.4.1",
     "gatsby-plugin-manifest": "^2.5.2",
     "gatsby-plugin-netlify": "^2.4.0",
     "gatsby-plugin-offline": "^3.3.3",
