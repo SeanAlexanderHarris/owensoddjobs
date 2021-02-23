@@ -4,7 +4,22 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Owen's Oddjobs Portfolio`,
+    // Used for the title template on pages other than the index site
+    siteTitle: `OJ's OddJobs`,
+    // Default title of the page
+    siteTitleAlt: `OJ's Oddjobs Portfolio`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `OJ's OddJobs - bootstrapped by @SeanHAlexander from @lekoarts`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://jodie.lekoarts.de`,
+    // Used for SEO
+    siteDescription: `OJ's OddJobs Portfolio`,
+    // Will be set on the html tag
+    siteLanguage: `en`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@SeanHAlexander`,
   },
   plugins: [
     {

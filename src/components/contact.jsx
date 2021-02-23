@@ -31,7 +31,11 @@ const Contact = () => {
   }
 
   return (
-    <form name="Contact Form" method="POST" action="/thankyou">
+    <form
+      name="Contact Form"
+      method="POST"
+      onSubmit={(event) => submitContact(event, values)}
+    >
       <div className="form-item">
         <label className="contact-label" htmlFor="name">
           Name
